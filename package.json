@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Nozgood/Projet-3/issues"
   },
-  "homepage": "https://github.com/Nozgood/Projet-3#readme"
+  "homepage": "https://github.com/Nozgood/Projet-3#readme",
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  }
 }
