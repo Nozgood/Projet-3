@@ -13,6 +13,42 @@
     &__info {
         padding-left: 12px;
         padding-right: 20px;
-        font-weight: 500;
+        font-size: 15px;
+        font-weight: 400;
+    }
+}
+
+.presentation {
+    background-color: #f6f6f6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0 60px 0;
+
+    &__titre {
+        text-align: center;
+        width: 70%;
+    }
+
+    &__sous-titre {
+        color: #656565;
+        text-align: center;
+        width: 80%;
+        font-size: 18px;
+        font-weight: 300;
+    }
+
+    &__bouton {
+
+        background: linear-gradient(to bottom,#FF79DA, 40%, #9356DC);
+        padding: 20px 20px;
+        border-radius: 30px;
+
+        &-titre {
+            color: white;
+            margin-block-start: 0;
+            margin-block-end: 0;
+        }
     }
 }
