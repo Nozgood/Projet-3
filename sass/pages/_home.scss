@@ -1,5 +1,4 @@
 @import "../utils/variables";
-@import "../utils/mixin";
 
 .localisation {
     background-color: #EAEAEA;
@@ -68,13 +67,18 @@
 
     &__card {
         display: flex;
-        justify-content: center;
         align-items: center;
         background-color: #f6f6f6;
-        margin: 0 30px;
-        padding: 20px 0;
-        border-radius: 10px;
+        margin: 0 30px 20px 30px;
+        padding: 35px 0;
+        border-radius: 20px;
+        box-shadow: 5px 5px 7px 5px #ebebeb;
 
+        &-titre {
+            font-weight: 500;
+            position: absolute;
+            left: 110px;
+        }
         &-numero {
             font-size: 15px;
             position: absolute;
@@ -87,10 +91,17 @@
         }
 
         &-icone {
-            padding-right: 20px;
-            margin-left: -10px;
+            position: absolute;
+            left: 65px;
             color: #7e7e7e;
             font-size: 18px;
+        }
+        &--colored {
+            background-color: #f5edff;
+
+            &-icone {
+                color: $color-primary;
+            }
         }
     }
 }
