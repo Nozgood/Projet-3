@@ -48,6 +48,14 @@
         background: linear-gradient(to bottom, $color-secondary, 40%, $color-primary);
         padding: 15px 20px;
         border-radius: 30px;
+        border: none;
+        box-shadow: 5px 5px 7px 1px #ebebeb;
+
+        &:hover {
+            background: linear-gradient(to bottom, $color-secondary, 65%, $color-primary);
+            box-shadow: 5px 5px 7px 1px #c4c2c2;
+            transition: box-shadow 0.5s;
+        }
 
         &-titre {
             color: white;
@@ -65,7 +73,7 @@
         display: flex;
         align-items: center;
         background-color: #f6f6f6;
-        margin: 0 30px 20px 30px;
+        margin: 0 20px 20px 30px;
         padding: 35px 0;
         border-radius: 20px;
         box-shadow: 5px 5px 7px 5px #ebebeb;
@@ -73,7 +81,7 @@
         &-titre {
             font-weight: 500;
             position: absolute;
-            left: 110px;
+            left: 100px;
         }
         &-numero {
             font-size: 15px;
