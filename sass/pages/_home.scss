@@ -113,7 +113,7 @@
 .restaurants {
     padding: 20px;
     background-color: #f6f6f6;
-    height: 1000px;
+    padding-bottom: 30px;
 
     &__card {
         background-color: white;
@@ -168,3 +168,12 @@
         }
     }
 }
+footer {
+    background-color: #353535;
+}
+
+.footer {
+        &__logo {
+            width: 100px;
+        }
+    }
