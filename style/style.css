@@ -162,10 +162,34 @@ header {
 
 footer {
   background-color: #353535;
+  padding: 20px;
 }
 
 .footer__logo {
-  width: 100px;
+  width: 90px;
+  padding-bottom: 10px;
+}
+.footer__section--icone {
+  display: flex;
+  align-items: baseline;
+  color: white;
+}
+.footer__section--icone-titre {
+  padding-left: 5px;
+  color: white;
+  font-size: 15px;
+  padding-bottom: 5px;
+}
+.footer__section--icone-fork {
+  font-size: 12px;
+}
+.footer__section--icone-hand {
+  font-size: 9px;
+}
+.footer__section-titre {
+  color: white;
+  font-size: 15px;
+  padding-bottom: 5px;
 }
 
 /*# sourceMappingURL=style.css.map */
