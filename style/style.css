@@ -6,8 +6,15 @@
 header {
   display: flex;
   justify-content: center;
+  align-items: center;
   padding-top: 10px;
   padding-bottom: 10px;
+}
+
+.header__fleche {
+  position: absolute;
+  left: 20px;
+  color: #353535;
 }
 
 .localisation {
