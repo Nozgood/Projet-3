@@ -1,0 +1,42 @@
+// gestion du main 
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+// gestion de l'image du début du menu 
+.menu-background {
+    &__image {
+        z-index: 1;
+        width: 100%;
+        height: 280px;
+        object-fit: cover;
+    }
+}
+// gestion de l'ensemble du menu 
+.menu {
+    position: relative;
+    top: -50px;
+    background-color: #f6f6f6;
+    padding-top: 40px;
+    border-radius: 40px 40px 0 0;
+    z-index: 3;
+
+    &__header {
+        padding: 0 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &-titre {
+            font-family: "shrikhand";
+            font-weight: lighter;
+            font-size: 22px;
+        }
+
+        i {
+            font-size: 20px;
+            padding-right: 10px;
+        }
+    }
+}
