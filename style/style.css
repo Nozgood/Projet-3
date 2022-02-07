@@ -121,6 +121,12 @@ header {
   background-color: #f6f6f6;
   padding-bottom: 30px;
 }
+.restaurants__lien {
+  text-decoration: none;
+}
+.restaurants__lien:visited {
+  color: black;
+}
 .restaurants__card {
   background-color: white;
   display: flex;
@@ -186,6 +192,10 @@ footer {
   color: white;
   font-size: 15px;
   padding-bottom: 5px;
+  text-decoration: none;
+}
+.footer__section--icone-titre:visited {
+  color: white;
 }
 .footer__section--icone-fork {
   font-size: 12px;
@@ -197,6 +207,14 @@ footer {
   color: white;
   font-size: 15px;
   padding-bottom: 5px;
+  text-decoration: none;
+}
+.footer__section-titre:visited {
+  color: white;
+}
+
+header a:visited {
+  color: black;
 }
 
 main {
@@ -273,6 +291,45 @@ main {
   font-size: 15px;
   font-weight: bold;
   padding-right: 10px;
+}
+.menu__card--entree {
+  animation: fadein 800ms;
+  transform: translateY(5px);
+  transition: transform 800ms;
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.menu__card--plat {
+  animation: fadein 1.6s;
+  transform: translateY(5px);
+  transition: transform 1.6s;
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.menu__card--dessert {
+  animation: fadein 3.2s;
+  transform: translateY(5px);
+  transition: transform 3.2s;
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 .menu__bouton {
   background: linear-gradient(to bottom, #FF79DA, 40%, #9356DC);

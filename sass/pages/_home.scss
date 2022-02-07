@@ -104,6 +104,13 @@
     background-color: #f6f6f6;
     padding-bottom: 30px;
 
+    &__lien {
+        text-decoration: none;
+
+        &:visited {
+            color: black;
+        }
+    }
     &__card {
         background-color: white;
         display: flex;
