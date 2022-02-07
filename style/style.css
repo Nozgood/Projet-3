@@ -250,9 +250,27 @@ main {
   font-size: 25px;
   padding-left: 20px;
 }
-.menu__header i {
+.menu__header-titre--icone .far {
+  font-size: 20px;
+  position: absolute;
+  right: 50px;
+}
+.menu__header-titre--icone .far:hover {
+  opacity: 0;
+  transition-duration: 0.5s;
+}
+.menu__header-titre--icone .fas {
   font-size: 20px;
   padding-right: 10px;
+  background: linear-gradient(to bottom, #FF79DA, 65%, #9356DC);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  opacity: 0;
+}
+.menu__header-titre--icone:hover {
+  opacity: 1;
+  transition-duration: 0.5s;
 }
 .menu__card-titre {
   text-transform: uppercase;

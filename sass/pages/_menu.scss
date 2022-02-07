@@ -47,11 +47,32 @@ main {
             font-weight: lighter;
             font-size: 25px;
             padding-left: 20px;
-        }
 
-        i {
-            font-size: 20px;
-            padding-right: 10px;
+            &--icone {
+                .far {
+                    font-size: 20px;
+                    position: absolute;
+                    right: 50px;
+
+                    &:hover {
+                        opacity: 0;
+                        transition-duration: 0.5s;
+                    }
+                }
+                .fas {
+                    font-size: 20px;
+                    padding-right: 10px;
+                    background: linear-gradient(to bottom, $color-secondary, 65%, $color-primary);
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    color: transparent;
+                    opacity: 0;
+                }
+                &:hover {
+                    opacity: 1;
+                    transition-duration: 0.5s;
+                }
+            }
         }
     }
 
