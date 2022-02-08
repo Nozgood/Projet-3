@@ -73,11 +73,13 @@ main {
             font-weight: 300;
             padding: 10px 0 20px 20px;
 
-            &--underline {
-                font-size: 5px;
-                color: #f6f6f6;
-                border-bottom: 3px solid $color-tertiary;
-                width: 12%;
+            &::after {
+                content: "";
+                display: block;
+                margin-top: 5px;
+                width: 40px;
+                height: 3px;
+                background: $color-tertiary;
             }
         }
 

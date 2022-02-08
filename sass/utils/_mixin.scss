@@ -46,6 +46,7 @@
             }
 }
 
+// mixin de création de l'animation du bouton like 
 @mixin heart-like {
     font-size: 20px;
     background: linear-gradient(to bottom, $color-secondary, 40%, $color-primary);
@@ -61,4 +62,13 @@
         transform: scale(1.1);
         transform-origin: center;
     }
+}
+
+// mixin de création du surlignage de "entrées"... 
+
+@mixin menu-underline {
+    display: block;
+                content: "";
+                margin-top: 5px;
+                background: $color-tertiary;
 }

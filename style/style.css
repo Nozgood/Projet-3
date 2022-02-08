@@ -24,7 +24,7 @@ header {
   justify-content: center;
   align-items: baseline;
   box-shadow: inset 0 3px 3px #D0D0D0;
-  padding: 15px 0;
+  padding: 15px 0 15px 20px;
 }
 .localisation__icone {
   font-size: 17px;
@@ -32,9 +32,17 @@ header {
 }
 .localisation__info {
   padding-left: 12px;
-  padding-right: 20px;
+  height: 20px;
   font-size: 15px;
   font-weight: 400;
+  border: none;
+  background-color: #eaeaea;
+}
+.localisation__info:focus {
+  outline: none;
+}
+.localisation__info::placeholder {
+  color: black;
 }
 
 .presentation {
@@ -173,6 +181,7 @@ header {
 .restaurants__card-info-icone:hover {
   opacity: 0;
   transition-duration: 500ms;
+  transition-property: opacity;
 }
 .restaurants__card-info-icone--full {
   padding-right: 20px;
@@ -301,11 +310,13 @@ main {
   font-weight: 300;
   padding: 10px 0 20px 20px;
 }
-.menu__card-titre--underline {
-  font-size: 5px;
-  color: #f6f6f6;
-  border-bottom: 3px solid #99E2D0;
-  width: 12%;
+.menu__card-titre::after {
+  content: "";
+  display: block;
+  margin-top: 5px;
+  width: 40px;
+  height: 3px;
+  background: #99E2D0;
 }
 .menu__card-item {
   background-color: white;
