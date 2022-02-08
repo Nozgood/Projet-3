@@ -244,6 +244,84 @@ footer {
   color: white;
 }
 
+.site {
+  opacity: 1;
+  animation: visible 3s linear;
+}
+@keyframes visible {
+  0% {
+    opacity: 0;
+  }
+  1% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1s;
+  }
+}
+
+.loader {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  animation: invisible 3s linear;
+}
+@keyframes invisible {
+  0% {
+    opacity: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.lettre {
+  display: block;
+  font-size: 50px;
+  letter-spacing: 50px;
+  animation: big 2.8s ease-in-out;
+  font-family: "shrikhand";
+}
+@keyframes big {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(2);
+  }
+  50% {
+    transform: scale(2) rotate(360deg);
+  }
+  75% {
+    transform: scale(2) rotate(360deg);
+  }
+}
+
+.purple {
+  color: #9356DC;
+}
+
+.rose {
+  color: #FF79DA;
+}
+
+.green {
+  color: #99E2D0;
+}
+
 header a:visited {
   color: black;
 }

@@ -1,6 +1,9 @@
+// import des fichiers complémentaires 
 @import "../utils/variables";
 @import "../utils/mixin";
 
+
+// gestion de la partie localisation 
 .localisation {
     background-color: #EAEAEA;
     display:flex;
@@ -30,7 +33,7 @@
         }
     }
 }
-
+// gestion de la presentation 
 .presentation {
     background-color: #f6f6f6;
     display: flex;
@@ -63,7 +66,7 @@
         }
     }
 }
-
+// gestion de la partie fonctionnement 
 .fonctionnement {
     padding: 20px 0;
 
@@ -107,7 +110,7 @@
         }
     }
 }
-
+// gestion du style des cards restaurants 
 .restaurants {
     padding: 20px;
     background-color: #f6f6f6;
@@ -186,6 +189,7 @@
         }
     }
 }
+// gestion du style du footer 
 footer {
     background-color: #353535;
     padding: 20px;
@@ -222,4 +226,86 @@ footer {
                 @include footer-titre;
         }
     }
+}
+//gestion du loader 
+
+.site {
+    opacity: 1;
+    animation: visible 3s linear;
+
+    @keyframes visible {
+        0% {
+            opacity: 0;
+        }
+        1% {
+            opacity: 0;
+        }
+        75% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1s;
+        }
+    }
+}
+.loader {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    animation: invisible 3s linear;
+
+    @keyframes invisible {
+
+        0% {
+            opacity: 0;
+        }
+        1% {
+            opacity: 1;
+        }
+        75% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 0;
+        }
+    }
+} 
+
+.lettre {
+    display: block;
+    font-size: 50px;
+    letter-spacing: 50px;
+    animation: big 2.8s ease-in-out;
+    font-family: "shrikhand";
+
+    @keyframes big {
+        0% {
+            transform: scale(1);
+        }
+        25% {
+            transform: scale(2);
+        }
+        50% {
+            transform: scale(2) rotate(360deg);
+        }
+        75% {
+            transform: scale(2) rotate(360deg);
+        }
+    }
+}
+
+.purple {
+    color: $color-primary;
+}
+
+.rose {
+    color: $color-secondary;
+}
+
+.green {
+    color: $color-tertiary;
 }
