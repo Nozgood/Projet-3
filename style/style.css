@@ -148,6 +148,7 @@ header {
 .restaurants__card-info {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 15px 0;
 }
 .restaurants__card-info-texte {
@@ -165,12 +166,33 @@ header {
   padding-top: 3px;
 }
 .restaurants__card-info-icone {
+  font-size: 20px;
+  position: absolute;
+  right: 41px;
+}
+.restaurants__card-info-icone:hover {
+  opacity: 0;
+  transition-duration: 500ms;
+}
+.restaurants__card-info-icone--full {
   padding-right: 20px;
   font-size: 20px;
+  opacity: 0;
 }
-.restaurants__card-info-icone i:hover {
-  font-weight: 900;
-  color: #9356DC;
+.restaurants__card-info-icone--full:hover {
+  font-size: 20px;
+  background: linear-gradient(to bottom, #FF79DA, 40%, #9356DC);
+  background-clip: text;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  opacity: 0;
+  transition: all 600ms ease-in-out;
+}
+.restaurants__card-info-icone--full:hover:hover {
+  opacity: 1;
+  transform: scale(1.1);
+  transform-origin: center;
 }
 
 footer {
@@ -250,27 +272,29 @@ main {
   font-size: 25px;
   padding-left: 20px;
 }
-.menu__header-titre--icone .far {
-  font-size: 20px;
+.menu__header-icone {
   position: absolute;
-  right: 50px;
-}
-.menu__header-titre--icone .far:hover {
-  opacity: 0;
-  transition-duration: 0.5s;
-}
-.menu__header-titre--icone .fas {
+  right: 40px;
   font-size: 20px;
-  padding-right: 10px;
-  background: linear-gradient(to bottom, #FF79DA, 65%, #9356DC);
+}
+.menu__header-icone:hover {
+  opacity: 0;
+  transition-duration: 500ms;
+}
+.menu__header-icone--full {
+  font-size: 20px;
+  background: linear-gradient(to bottom, #FF79DA, 40%, #9356DC);
+  background-clip: text;
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
   opacity: 0;
+  transition: all 600ms ease-in-out;
 }
-.menu__header-titre--icone:hover {
+.menu__header-icone--full:hover {
   opacity: 1;
-  transition-duration: 0.5s;
+  transform: scale(1.1);
+  transform-origin: center;
 }
 .menu__card-titre {
   text-transform: uppercase;

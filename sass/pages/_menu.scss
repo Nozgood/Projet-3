@@ -47,31 +47,21 @@ main {
             font-weight: lighter;
             font-size: 25px;
             padding-left: 20px;
+        }
 
-            &--icone {
-                .far {
-                    font-size: 20px;
-                    position: absolute;
-                    right: 50px;
+        &-icone {
+            position: absolute;
+            right: 40px;
+            font-size: 20px;
 
-                    &:hover {
-                        opacity: 0;
-                        transition-duration: 0.5s;
-                    }
-                }
-                .fas {
-                    font-size: 20px;
-                    padding-right: 10px;
-                    background: linear-gradient(to bottom, $color-secondary, 65%, $color-primary);
-                    background-clip: text;
-                    -webkit-background-clip: text;
-                    color: transparent;
-                    opacity: 0;
-                }
-                &:hover {
-                    opacity: 1;
-                    transition-duration: 0.5s;
-                }
+            &:hover {
+                opacity: 0;
+                transition-duration: 500ms;
+            }
+
+            &--full {
+
+                @include heart-like;
             }
         }
     }

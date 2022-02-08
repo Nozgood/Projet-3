@@ -134,6 +134,7 @@
         &-info {
             display: flex;
             justify-content: space-between;
+            align-items: center;
             padding: 15px 0;
 
             &-texte {
@@ -152,12 +153,23 @@
                 }
             }
             &-icone {
-                padding-right: 20px;
                 font-size: 20px;
-                i {
+                position: absolute;
+                right: 41px;
+
+                &:hover {
+                    opacity: 0;
+                    transition-duration: 500ms;
+                }
+
+                &--full {
+                    padding-right: 20px;
+                    font-size: 20px;
+                    opacity: 0;
+
                     &:hover {
-                        font-weight: 900;
-                        color: $color-primary;
+
+                        @include heart-like;
                     }
                 }
             }
