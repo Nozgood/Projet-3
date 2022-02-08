@@ -228,6 +228,7 @@ footer {
     }
 }
 //gestion du loader 
+
 .site {
     opacity: 1;
     animation: visible 3s linear;
@@ -308,3 +309,35 @@ footer {
 .green {
     color: $color-tertiary;
 }
+
+/* .un {
+    animation: escalier 3s linear;
+
+    @keyframes escalier {
+        0% {
+            transform: scale(3);
+        }
+        25% {
+            transform: scale(2);
+        }
+        100% {
+            transform: scale(1)
+        }
+    }
+}
+
+.deux {
+    animation: escalier 3s linear;
+
+    @keyframes escalier {
+        0% {
+            transform: scale(2.8);
+        }
+        25% {
+            transform: scale(1.7);
+        }
+        100% {
+            transform: scale(1)
+        }
+    }
+} */

@@ -118,15 +118,15 @@ main {
         }
         &--entree {
 
-            @include animation-menu(800ms);
+            @include animation-menu(1s);
         }
         &--plat {
 
-            @include animation-menu(1.6s);
+            @include animation-menu(2s);
         }
         &--dessert {
 
-            @include animation-menu(3.2s);
+            @include animation-menu(3s);
         }
     }
 

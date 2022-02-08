@@ -322,6 +322,37 @@ footer {
   color: #99E2D0;
 }
 
+/* .un {
+    animation: escalier 3s linear;
+
+    @keyframes escalier {
+        0% {
+            transform: scale(3);
+        }
+        25% {
+            transform: scale(2);
+        }
+        100% {
+            transform: scale(1)
+        }
+    }
+}
+
+.deux {
+    animation: escalier 3s linear;
+
+    @keyframes escalier {
+        0% {
+            transform: scale(2.8);
+        }
+        25% {
+            transform: scale(1.7);
+        }
+        100% {
+            transform: scale(1)
+        }
+    }
+} */
 header a:visited {
   color: black;
 }
@@ -424,42 +455,45 @@ main {
   padding-right: 10px;
 }
 .menu__card--entree {
-  animation: fadein 800ms;
-  transform: translateY(5px);
-  transition: transform 800ms;
+  animation: fadein 1s;
+  transition: transform 1s;
 }
 @keyframes fadein {
   from {
     opacity: 0;
+    margin-top: 30px;
   }
   to {
     opacity: 1;
+    margin-top: 0;
   }
 }
 .menu__card--plat {
-  animation: fadein 1.6s;
-  transform: translateY(5px);
-  transition: transform 1.6s;
+  animation: fadein 2s;
+  transition: transform 2s;
 }
 @keyframes fadein {
   from {
     opacity: 0;
+    margin-top: 30px;
   }
   to {
     opacity: 1;
+    margin-top: 0;
   }
 }
 .menu__card--dessert {
-  animation: fadein 3.2s;
-  transform: translateY(5px);
-  transition: transform 3.2s;
+  animation: fadein 3s;
+  transition: transform 3s;
 }
 @keyframes fadein {
   from {
     opacity: 0;
+    margin-top: 30px;
   }
   to {
     opacity: 1;
+    margin-top: 0;
   }
 }
 .menu__bouton {
