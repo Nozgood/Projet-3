@@ -7,7 +7,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 10px;
+  padding-top: 20px;
   padding-bottom: 10px;
 }
 
@@ -60,7 +60,7 @@ header {
 .presentation__sous-titre {
   color: #656565;
   text-align: center;
-  width: 80%;
+  width: 85%;
   font-size: 18px;
   font-weight: 300;
   margin-bottom: 30px;
@@ -85,7 +85,11 @@ header {
 }
 
 .fonctionnement {
-  padding: 20px 0;
+  padding: 20px 0 40px 0;
+  background-color: white;
+}
+.fonctionnement__titre {
+  padding-left: 20px;
 }
 .fonctionnement__card {
   display: flex;
@@ -142,6 +146,17 @@ header {
   border-radius: 10px;
   margin-bottom: 20px;
   box-shadow: 0 2px 10px #D0D0D0;
+}
+.restaurants__card--new {
+  position: absolute;
+  right: 40px;
+  margin-top: 10px;
+  color: #008766;
+  font-size: 13px;
+  font-weight: 500;
+  padding: 7px 10px 5px 10px;
+  border: 1px solid #99E2D0;
+  background-color: #99E2D0;
 }
 .restaurants__card-image {
   width: 100%;
@@ -212,6 +227,9 @@ footer {
 .footer__logo {
   width: 90px;
   padding-bottom: 10px;
+}
+.footer__section {
+  padding-bottom: 5px;
 }
 .footer__section--icone {
   display: flex;
