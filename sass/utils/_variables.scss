@@ -1,7 +1,14 @@
 // fichier d'initialisation des variables
 
+// gestion des couleurs 
 $color-primary: #9356DC;
 $color-secondary: #FF79DA;
 $color-tertiary: #99E2D0;
-
 $degrade: linear-gradient(#FF79DA,#9356DC);
+
+// media queries 
+$breakpoint: (
+    'mini-mobile': 345px,
+    'tablet': 768px,
+    'desktop': 1024px
+);
