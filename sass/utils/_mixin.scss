@@ -9,6 +9,9 @@
     &:visited {
         color: white;
     }
+    &:hover {
+        color: $color-primary;
+    }
 }
 
 @mixin bouton-style {
@@ -84,6 +87,11 @@
     }
 }
 
+@mixin mobile {
+    @media all and (min-width: map-get($breakpoint , mobile)) and (max-width: map-get($breakpoint, tablet )) {
+        @content;
+    }
+}
 @mixin tablet {
     @media all and (min-width: map-get($breakpoint , tablet)) and (max-width: map-get($breakpoint, desktop )) {
         @content;

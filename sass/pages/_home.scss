@@ -82,6 +82,7 @@
         padding: 35px 0;
         border-radius: 20px;
         box-shadow: 5px 5px 7px 5px #ebebeb;
+        transition: all 100ms ease-in;
 
         &-titre {
             font-weight: 500;
@@ -111,6 +112,9 @@
             &-icone {
                 color: $color-primary;
             }
+        }
+        &:hover {
+            transform: scale(1.1);
         }
     }
 }
@@ -241,10 +245,13 @@ footer {
 
                 @include footer-titre;
         }
+        &:hover {
+            color: $color-primary;
+        }
     }
 }
 //gestion du loader 
-
+/*
 .site {
     opacity: 1;
     animation: visible 3s linear;
@@ -326,7 +333,7 @@ footer {
     color: $color-tertiary;
 }
 
-/* .un {
+.un {
     animation: escalier 3s linear;
 
     @keyframes escalier {

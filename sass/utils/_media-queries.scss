@@ -7,11 +7,64 @@
     // partie accueil 
     .fonctionnement {
         display: flex;
-        justify-content: center;
         flex-direction: column;
+        justify-content: center;
+        &__titre {
+            text-align: center;
+            margin-bottom: 30px;
+            position: relative;
+        }
+
+        &__all-card {
+            display: flex;
+            justify-content: center;
+        }
         &__card {
             width: 50%;
+            max-width: 430px;
+            padding: 23px 0;
+
+            &-numero {
+                position: static;
+                margin-left: -15px;
+                margin-right: 10px;
+            }
+            &-titre {
+                position: static;
+            }
+            &-icone {
+                position: static;
+                margin-right: 10px;
+            }
         }
+    }
+    .restaurants {
+        &__titre {
+            text-align: center;
+            padding-bottom: 20px;
+        }
+        &__1-2 {
+            display: flex;
+            justify-content: space-around;
+        }
+        &__3-4 {
+            display: flex;
+            justify-content: space-around;
+        }
+        &__card {
+            width: 700px;
+            position: relative;
+
+            &-info-icone {
+                right: 21px;
+            }
+        }
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     // partie cards 
     .menu {
