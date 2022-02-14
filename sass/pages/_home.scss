@@ -82,7 +82,7 @@
         padding: 35px 0;
         border-radius: 20px;
         box-shadow: 5px 5px 7px 5px #ebebeb;
-        transition: all 100ms ease-in;
+        transition: all 100ms linear;
 
         &-titre {
             font-weight: 500;
@@ -112,9 +112,6 @@
             &-icone {
                 color: $color-primary;
             }
-        }
-        &:hover {
-            transform: scale(1.1);
         }
     }
 }
@@ -251,7 +248,7 @@ footer {
     }
 }
 //gestion du loader 
-/*
+
 .site {
     opacity: 1;
     animation: visible 3s linear;
@@ -332,35 +329,3 @@ footer {
 .green {
     color: $color-tertiary;
 }
-
-.un {
-    animation: escalier 3s linear;
-
-    @keyframes escalier {
-        0% {
-            transform: scale(3);
-        }
-        25% {
-            transform: scale(2);
-        }
-        100% {
-            transform: scale(1)
-        }
-    }
-}
-
-.deux {
-    animation: escalier 3s linear;
-
-    @keyframes escalier {
-        0% {
-            transform: scale(2.8);
-        }
-        25% {
-            transform: scale(1.7);
-        }
-        100% {
-            transform: scale(1)
-        }
-    }
-} */

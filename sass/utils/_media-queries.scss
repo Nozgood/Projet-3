@@ -4,6 +4,9 @@
 // C'est ici que se modifient les media queries (breakpoint gérés dans un mixin) 
 
 @include desktop {
+    body {
+        max-width: 2000px;
+    }
     // partie accueil 
     .fonctionnement {
         display: flex;
@@ -18,6 +21,7 @@
         &__all-card {
             display: flex;
             justify-content: center;
+            padding-right: 10px;
         }
         &__card {
             width: 50%;
@@ -52,9 +56,8 @@
             justify-content: space-around;
         }
         &__card {
-            width: 700px;
             position: relative;
-
+            width: 480px;
             &-info-icone {
                 right: 21px;
             }
