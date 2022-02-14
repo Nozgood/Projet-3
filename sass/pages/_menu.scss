@@ -2,6 +2,9 @@
 @import "../utils/mixin";
 
 // gestion du style du header 
+body {
+    min-width: 322px;
+}
 header {
 
     a {
@@ -128,8 +131,9 @@ main {
                 transition: all 600ms;
             }
             &--anim {
+                opacity: 0;
                 height: 66px;
-                width: 20%;
+                width: 12%;
                 position: absolute;
                 right: -68px;
                 background-color: $color-tertiary;
@@ -171,15 +175,15 @@ main {
         }
         &--entree {
 
-            @include animation-menu(800ms);
+            @include animation-menu(600ms);
         }
         &--plat {
 
-            @include animation-menu(1.6s);
+            @include animation-menu(1s);
         }
         &--dessert {
 
-            @include animation-menu(2s);
+            @include animation-menu(1.2s);
         }
     }
 

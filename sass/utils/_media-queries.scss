@@ -75,6 +75,7 @@
             &-item {
                 &--anim {
                     right: -71px;
+                    width: 20%;
                 }
             }
             &-all {
@@ -84,7 +85,26 @@
         }
     }
 }
-
+@include tablet {
+    .menu {
+        &__card {
+            &-item {
+                &-texte {
+                    h3 {
+                        overflow: visible;
+                    }
+                    p {
+                        overflow: visible;
+                    }
+                }
+                &--anim {
+                    width: 10%;
+                    right: -74px;
+                }
+            }
+        }
+    }
+}
 @include mini-mobile {
     .menu {
         &__card {
