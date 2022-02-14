@@ -446,6 +446,8 @@ main {
   background: #99E2D0;
 }
 .menu__card-item {
+  position: relative;
+  overflow: hidden;
   background-color: white;
   display: flex;
   justify-content: space-between;
@@ -486,15 +488,14 @@ main {
 }
 .menu__card-item--anim {
   height: 66px;
-  width: 0%;
+  width: 20%;
   position: absolute;
-  right: 20px;
+  right: -68px;
   background-color: #99E2D0;
   border-radius: 0 15px 15px 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  opacity: 0;
   transition: all 600ms;
 }
 .menu__card-item--anim-check {
@@ -514,24 +515,13 @@ main {
 }
 .menu__card-item:hover .menu__card-item--anim {
   opacity: 1;
-  width: 18%;
+  transform: translateX(-68px);
 }
 .menu__card-item:hover .menu__card-item--anim-check {
   opacity: 1;
   transform: rotate(360deg);
-}
-@media all and (max-width: 345px) {
-  .menu__card-item-texte h3 {
-    width: 180px;
-  }
-  .menu__card-item:hover .menu__card-item-texte h3 {
-    width: 150px;
-  }
-}
-@media all and (min-width: 1024px) {
-  .menu__card-item:hover .menu__card-item-prix {
-    margin-right: 200px;
-  }
+  transition-delay: 100ms;
+  transition-property: transform;
 }
 .menu__card--entree {
   animation: fadein 800ms;
@@ -575,21 +565,6 @@ main {
     margin-top: 0;
   }
 }
-@media all and (min-width: 1024px) {
-  .menu__card-all {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  .menu__card-item {
-    width: 400px;
-  }
-  .menu__card-item--anim {
-    position: absolute;
-    right: 313px;
-  }
-}
 .menu__bouton {
   background: linear-gradient(to bottom, #FF79DA, 40%, #9356DC);
   padding: 15px 20px;
@@ -614,6 +589,24 @@ main {
   margin-block-start: 0;
   margin-block-end: 0;
   font-weight: 500;
+}
+
+@media all and (min-width: 1024px) {
+  .menu__card-item--anim {
+    right: -71px;
+  }
+  .menu__card-all {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+@media all and (max-width: 345px) {
+  .menu__card-item-texte h3 {
+    width: 180px;
+  }
+  .menu__card:hover .menu__card-item-texte h3 {
+    width: 150px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

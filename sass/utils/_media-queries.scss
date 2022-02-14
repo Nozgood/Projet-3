@@ -1,0 +1,41 @@
+@import "../utils/mixin";
+@import "../utils/variables";
+
+// C'est ici que se modifient les media queries (breakpoint gérés dans un mixin) 
+
+@include desktop {
+    .menu {
+        &__card {
+
+            &-item {
+                &--anim {
+                    right: -71px;
+                }
+            }
+            &-all {
+                display: flex;
+                justify-content: space-around;
+            }
+        }
+    }
+}
+
+@include mini-mobile {
+    .menu {
+        &__card {
+
+            &-item {
+                &-texte {
+                    h3 {
+                        width: 180px;
+                    }
+                }
+            }
+            &:hover {
+                .menu__card-item-texte h3 {
+                    width: 150px;
+                }
+            }
+        }
+    }
+}

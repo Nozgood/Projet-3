@@ -84,6 +84,8 @@ main {
         }
 
         &-item {
+            position: relative;
+            overflow: hidden;
             background-color: white;
             display: flex;
             justify-content: space-between;
@@ -127,15 +129,15 @@ main {
             }
             &--anim {
                 height: 66px;
-                width: 0%;
+                width: 20%;
                 position: absolute;
-                right: 20px;
+                right: -68px;
                 background-color: $color-tertiary;
                 border-radius: 0 15px 15px 0;
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                opacity: 0;
+
                 transition: all 600ms;
 
                 &-check {
@@ -157,32 +159,13 @@ main {
                 }
                 .menu__card-item--anim {
                     opacity: 1;
-                    width: 18%;
+                    transform: translateX(-68px);
                 }
                 .menu__card-item--anim-check {
                     opacity: 1;
                     transform: rotate(360deg);
-                }
-            }
-            @include mini-mobile {
-
-                &-texte {
-
-                    h3 {
-                        width: 180px;
-                    }
-                }
-                &:hover {
-                    .menu__card-item-texte h3 {
-                        width: 150px;
-                    }
-                }
-            }
-            @include desktop {
-                &:hover {
-                    .menu__card-item-prix {
-                        margin-right: 200px;
-                    }
+                    transition-delay: 100ms;
+                    transition-property: transform;
                 }
             }
         }
@@ -197,23 +180,6 @@ main {
         &--dessert {
 
             @include animation-menu(2s);
-        }
-
-        @include desktop {
-            &-all {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-            }
-            &-item {
-                width: 400px;
-                
-                &--anim {
-                    position: absolute;
-                    right: 313px;
-                }
-            }
         }
     }
 
