@@ -59,11 +59,7 @@
     &__bouton {
 
         @include bouton-style;
-
-        &-titre {
-
-            @include bouton-titre;
-        }
+        @include bouton-titre;
     }
 }
 // gestion de la partie fonctionnement 
