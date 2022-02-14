@@ -196,12 +196,8 @@ main {
             margin-bottom: 20px
         }
 
+        @include bouton-titre;
         @include bouton-style;
         padding: 15px 40px;
-
-        &-titre {
-
-            @include bouton-titre;
-        }
     }
 }
