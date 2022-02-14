@@ -592,6 +592,15 @@ main {
 }
 
 @media all and (min-width: 1024px) {
+  .fonctionnement {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .fonctionnement__card {
+    width: 50%;
+  }
+
   .menu__card-item--anim {
     right: -71px;
   }
@@ -604,7 +613,7 @@ main {
   .menu__card-item-texte h3 {
     width: 180px;
   }
-  .menu__card:hover .menu__card-item-texte h3 {
+  .menu__card-item:hover .menu__card-item-texte h3 {
     width: 150px;
   }
 }

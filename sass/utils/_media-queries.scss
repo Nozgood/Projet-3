@@ -4,9 +4,18 @@
 // C'est ici que se modifient les media queries (breakpoint gérés dans un mixin) 
 
 @include desktop {
+    // partie accueil 
+    .fonctionnement {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        &__card {
+            width: 50%;
+        }
+    }
+    // partie cards 
     .menu {
         &__card {
-
             &-item {
                 &--anim {
                     right: -71px;
@@ -30,11 +39,11 @@
                         width: 180px;
                     }
                 }
+                &:hover {
+                    .menu__card-item-texte h3 {
+                        width: 150px;
+                    }
             }
-            &:hover {
-                .menu__card-item-texte h3 {
-                    width: 150px;
-                }
             }
         }
     }
