@@ -1,5 +1,105 @@
+@import "../utils/variables";
+
 @mixin footer-titre {
     color: white;
     font-size: 15px;
     padding-bottom: 5px;
+    text-decoration: none;
+
+    &:visited {
+        color: white;
+    }
+    &:hover {
+        color: $color-primary;
+    }
+}
+
+@mixin bouton-style {
+    background: linear-gradient(to bottom, $color-secondary, 40%, $color-primary);
+        padding: 15px 20px;
+        border-radius: 30px;
+        border: none;
+        box-shadow: 5px 5px 7px 1px #ebebeb;
+
+        &:hover {
+            background: linear-gradient(to bottom, $color-secondary, 65%, $color-primary);
+            box-shadow: 5px 5px 7px 1px #c4c2c2;
+            transition: box-shadow 0.5s;
+        }
+}
+
+@mixin bouton-titre {
+    color: white;
+            margin-block-start: 0;
+            margin-block-end: 0;
+            font-weight: 500;
+}
+
+//animation apparition progressive des menus 
+@mixin animation-menu($time) {
+
+    animation: remontee $time;
+    transition: all $time linear;
+
+        @keyframes remontee {
+            0% {
+                opacity: 0;
+                margin-top: 40px;
+            }
+            100% {
+                opacity: 1;
+                margin-top: 0;
+            }
+        }
+}
+
+// mixin de création de l'animation du bouton like 
+@mixin heart-like {
+    font-size: 20px;
+    background: linear-gradient(to bottom, $color-secondary, 40%, $color-primary);
+    background-clip: text;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    opacity: 0;
+    transition: all 600ms ease-in-out;
+
+    &:hover {
+        opacity: 1;
+        transform: scale(1.1);
+        transform-origin: center;
+    }
+}
+
+// mixin de création du surlignage de "entrées"... 
+
+@mixin menu-underline {
+    display: block;
+                content: "";
+                margin-top: 5px;
+                background: $color-tertiary;
+}
+
+// media queries 
+@mixin mini-mobile {
+    @media all and (max-width: map-get($breakpoint , mini-mobile)) {
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media all and (min-width: map-get($breakpoint , mobile)) and (max-width: 767px) {
+        @content;
+    }
+}
+@mixin tablet {
+    @media all and (min-width: map-get($breakpoint , tablet)) and (max-width: 1023px) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media all and (min-width: map-get($breakpoint , desktop)) {
+        @content;
+    }
 }

@@ -1,0 +1,126 @@
+@import "../utils/mixin";
+@import "../utils/variables";
+
+// C'est ici que se modifient les media queries (breakpoint gérés dans un mixin) 
+
+@include desktop {
+    body {
+        max-width: 2000px;
+    }
+    // partie accueil 
+    .fonctionnement {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        &__titre {
+            text-align: center;
+            margin-bottom: 30px;
+            position: relative;
+        }
+
+        &__all-card {
+            display: flex;
+            justify-content: center;
+            padding-right: 10px;
+        }
+        &__card {
+            width: 50%;
+            max-width: 430px;
+            padding: 23px 0;
+
+            &-numero {
+                position: static;
+                margin-left: -15px;
+                margin-right: 10px;
+            }
+            &-titre {
+                position: static;
+            }
+            &-icone {
+                position: static;
+                margin-right: 10px;
+            }
+        }
+    }
+    .restaurants {
+        &__titre {
+            text-align: center;
+            padding-bottom: 20px;
+        }
+        &__1-2 {
+            display: flex;
+            justify-content: space-around;
+        }
+        &__3-4 {
+            display: flex;
+            justify-content: space-around;
+        }
+        &__card {
+            position: relative;
+            width: 480px;
+            &-info-icone {
+                right: 21px;
+            }
+        }
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    // partie cards 
+    .menu {
+        &__card {
+            &-item {
+                &--anim {
+                    right: -71px;
+                    width: 20%;
+                }
+            }
+            &-all {
+                display: flex;
+                justify-content: space-around;
+            }
+        }
+    }
+}
+@include tablet {
+    .menu {
+        &__card {
+            &-item {
+                &-texte {
+                    h3 {
+                        overflow: visible;
+                    }
+                    p {
+                        overflow: visible;
+                    }
+                }
+                &--anim {
+                    width: 10%;
+                    right: -74px;
+                }
+            }
+        }
+    }
+}
+@include mini-mobile {
+    .menu {
+        &__card {
+
+            &-item {
+                &-texte {
+                    h3 {
+                        width: 180px;
+                    }
+                }
+                &:hover {
+                    .menu__card-item-texte h3 {
+                        width: 150px;
+                    }
+            }
+            }
+        }
+    }
+}
