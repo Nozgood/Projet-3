@@ -2,6 +2,13 @@
 @import "../utils/variables";
 @import "../utils/mixin";
 
+a {
+    color: #000;
+
+    &:visited {
+        color: #000;
+    }
+}
 
 // gestion de la partie localisation 
 .localisation {
@@ -220,7 +227,6 @@
             }
         }
         &:hover {
-            transform: scale(1.03);
             opacity: 0.8;
         }
     }
