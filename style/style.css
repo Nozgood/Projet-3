@@ -478,6 +478,7 @@ main {
   overflow: hidden;
   text-overflow: ellipsis;
   transition: all 600ms;
+  width: 250px;
 }
 .menu__card-item-texte p {
   font-size: 15px;
@@ -486,6 +487,7 @@ main {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  padding-right: 5px;
 }
 .menu__card-item-prix {
   padding: 12px;
@@ -520,7 +522,7 @@ main {
   width: 200px;
 }
 .menu__card-item:hover .menu__card-item-prix {
-  margin-right: 80px;
+  margin-right: 90px;
 }
 .menu__card-item:hover .menu__card-item--anim {
   opacity: 1;
@@ -533,20 +535,6 @@ main {
   transition-property: transform;
 }
 .menu__card--entree {
-  animation: remontee 600ms;
-  transition: all 600ms linear;
-}
-@keyframes remontee {
-  0% {
-    opacity: 0;
-    margin-top: 40px;
-  }
-  100% {
-    opacity: 1;
-    margin-top: 0;
-  }
-}
-.menu__card--plat {
   animation: remontee 1s;
   transition: all 1s linear;
 }
@@ -560,9 +548,23 @@ main {
     margin-top: 0;
   }
 }
+.menu__card--plat {
+  animation: remontee 2s;
+  transition: all 2s linear;
+}
+@keyframes remontee {
+  0% {
+    opacity: 0;
+    margin-top: 40px;
+  }
+  100% {
+    opacity: 1;
+    margin-top: 0;
+  }
+}
 .menu__card--dessert {
-  animation: remontee 1.2s;
-  transition: all 1.2s linear;
+  animation: remontee 3s;
+  transition: all 3s linear;
 }
 @keyframes remontee {
   0% {
@@ -662,6 +664,9 @@ main {
     align-items: center;
   }
 
+  .menu__card--entree, .menu__card--plat, .menu__card--dessert {
+    width: 340px;
+  }
   .menu__card-item--anim {
     right: -71px;
     width: 20%;

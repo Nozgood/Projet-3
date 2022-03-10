@@ -72,6 +72,11 @@
     // partie cards 
     .menu {
         &__card {
+            &--entree,
+            &--plat,
+            &--dessert {
+                width: 340px;
+            }
             &-item {
                 &--anim {
                     right: -71px;
